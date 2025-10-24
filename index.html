@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Sections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .section {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .section p {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .section a {
+            color: #0066cc;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .section a img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .section a:hover img {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%) !important;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+            letter-spacing: 0.5px;
+            border: none;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(168, 85, 247, 0.6);
+            text-decoration: none;
+        }
+
+        .split-section {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+        }
+
+        .half {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .half img {
+            width: 95%;
+            height: 95%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div style="text-align: center;">
+            <a href="https://tiiny.host?fpr=bbnaruto" target="_blank">
+                <img src="https://d2gdx5nv84sdx2.cloudfront.net/uploads/hssat7mi/marketing_asset/thumbs/banner/8433/thumb_logo.png" alt="tiiny.host" style="max-width: 300px; margin-bottom: 30px;">
+            </a>
+            <br>
+            <a href="https://tiiny.host?fpr=bbnaruto" target="_blank" class="button">Get Started</a>
+        </div>
+    </div>
+
+    <div class="split-section">
+        <div class="half">
+            <img src="https://tiiny.host/assets/img/demo.gif" alt="Demo">
+        </div>
+        <div class="half">
+            <img src="https://d2gdx5nv84sdx2.cloudfront.net/uploads/hssat7mi/marketing_asset/thumbs/banner/8434/thumb_OG.jpg" alt="Preview">
+        </div>
+    </div>
+</body>
+</html>
